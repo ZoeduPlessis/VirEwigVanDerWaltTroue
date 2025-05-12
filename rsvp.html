@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RSVP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>RSVP</h1>
+    <p>We can't wait to celebrate with you!</p>
+  </header>
+
+  <section>
+    <h2>Please let us know you're coming</h2>
+    <p>Fill in the details below to RSVP for our special day at <strong>Plekhouers</strong>.</p>
+
+    <form>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="attending">Will you attend?</label><br>
+      <select id="attending" name="attending">
+        <option value="yes">Yes, I will be there</option>
+        <option value="no">No, I can't make it</option>
+      </select><br><br>
+
+      <label for="guests">Number of guests:</label><br>
+      <input type="number" id="guests" name="guests" min="1" max="10"><br><br>
+
+      <button type="submit" class="rsvp-button">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    With love, [Bride's Name] & [Groom's Name] ♥
+  </footer>
+</body>
+</html>
